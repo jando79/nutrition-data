@@ -3,7 +3,7 @@ export default class NutritionData {
     return fetch(`https://api.spoonacular.com/recipes/complexSearch?cuisine=${cuisine}&apiKey=${process.env.API_KEY}`)
       .then(function(response) {
         if (!response.ok) {
-          const errorMessage = `${response.status} ${response.statusText}`;
+          const errorMessage = `${response.status}`;
         throw new Error(errorMessage);
       } else {
         return response.json();
@@ -14,4 +14,3 @@ export default class NutritionData {
   });
 }
 }
-

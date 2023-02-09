@@ -2,8 +2,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import NutritionData from './js/nutrition-data.js';
-//import Ingredients from './js/ingredients.js';
-//import Nutrition from './js/nutrition.js';
 import Recipe from './js/recipe.js';
 
 // Business Logic
@@ -11,10 +9,11 @@ import Recipe from './js/recipe.js';
 function getData(cuisine) {
   NutritionData.getData(cuisine)
     .then(function (response1) {
-      if (response1) {
-        printElements(response1, cuisine);
+      if (response1.toString().includes("Error")) {
+        printError(response1);
       } else {
-        printError(response1, cuisine);
+        console.log("we are here");
+        printElements(response1);
       }
     });
 }
@@ -34,8 +33,9 @@ function getRecipe(id) {
 
 
 // UI Logic
-function printError(request, search) {
-  document.querySelector('#showResult').innerText = `There was an error accessing cuisines ${search}: ${request.status} ${request.statusText}`;
+function printError(response1) {
+  response1 = response1.toString();
+  document.getElementById('showResult').innerText = `There was an error accessing cuisines: ${response1}`;
 }
 
 function printElements(response1) {
