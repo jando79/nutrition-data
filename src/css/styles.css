@@ -1,9 +1,23 @@
 body {
   padding-left: 300px;
   padding-top: 50px;
+  background-image: linear-gradient(45deg, #e7d6e0 50%, transparent 70%), linear-gradient(-20deg, #dfd4d4 50%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: rgb(230, 197, 197);
+  font-size: large;
+  font-weight:bolder;
+  color: black;
 }
 
 #div1 {
   column-count: 2;
 }
 
+#div2 {
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+}
