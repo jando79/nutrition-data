@@ -1,0 +1,8 @@
+body {
+  padding-left: 300px;
+  padding-top: 50px;
+}
+
+#div1 {
+  column-count: 2;
+}
