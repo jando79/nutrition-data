@@ -1,6 +1,6 @@
 # Nutrition Data
 
-##### By _David Jandron_
+##### By _David Jandron and Asia Kaplanyan_
 
 #### _Description_
 
@@ -32,4 +32,4 @@ _This is a web app that displays recipes from selected cuisine types, and displa
 
 * _MIT_
 
-Copyright (c) _2023_ _David Jandron_
+Copyright (c) _2023_ _David Jandron and Asia Kaplanyan_
