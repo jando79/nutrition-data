@@ -2,9 +2,9 @@
 
 ##### By _David Jandron_
 
-#### _This is a web app that displays recipes from selected cuisine types, and displays nutrion information, as well as ingredients and instructions_
+#### _Description_
 
-_A web application that..._
+_This is a web app that displays recipes from selected cuisine types, and displays nutrion information, as well as ingredients and instructions_
 
 ## Technologies Used
 
