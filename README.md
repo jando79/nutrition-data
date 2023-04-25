@@ -1,8 +1,8 @@
-# Title
+# Nutrition Data
 
 ##### By _David Jandron_
 
-#### _Description_
+#### _This is a web app that displays recipes from selected cuisine types, and displays nutrion information, as well as ingredients and instructions_
 
 _A web application that..._
 
